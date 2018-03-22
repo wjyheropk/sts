@@ -57,7 +57,7 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 > <i class="icon-pencil"></i>**Note：**以下分布式事务简称trans，原子操作简称op。
 
-
+![](https://raw.githubusercontent.com/wjyheropk/ImageStore/master/sts-1.jpg)
 
 问题一：谁发起事务恢复？
 
@@ -83,10 +83,9 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 作为参与者，需要知道，这个操作之前是不是由我做的，有没有做成功，才能回滚操作，所以想恢复，必先持久化事物信息，如下图所示，绿色的框中已经列举了需要持久化的必要信息
 
-
-
 同时，因为持久化了事务id，原子操作id和状态，所以业务服务、rollbackApi就可以支持幂等了
 
+![](https://raw.githubusercontent.com/wjyheropk/ImageStore/master/sts-2.jpg)
 
 
 问题二：怎么样保证持久化的事务信息可信？
