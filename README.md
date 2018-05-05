@@ -91,6 +91,8 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 <div align=center><img width="800" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-2.png"/></div>
 
 
+<br />
+
 问题二：怎么样保证持久化的事务信息可信？
 
 - 因为事物信息的持久化也同样存在事物问题，所以如何确保被持久化的信息可信呢？答案是：利用本地事务。
