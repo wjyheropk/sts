@@ -88,7 +88,7 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 - 同时，因为持久化了事务id，原子操作id和状态，所以业务服务、rollbackApi就可以支持幂等了
 
-<div align=center><img width="800" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-2.png"/></div>
+<div align=center><img width="700" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-2.png"/></div>
 
 
 <br />
@@ -146,7 +146,7 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 除了使用transId来标识一个分布式事务之外，STS还使用trainId来串联一系列的级联事务。在参与者进行事务恢复时，会先查找本地事务持久化数据，判断是否存在级联事务，如果存在则该模块先发起下游级联事务的恢复，再恢复上游事务（无论级联事务是否恢复成功）
 
-![](https://github.com/wjyheropk/ImageStore/blob/master/sts-4.png)
+<div align=center><img width="700" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-4.png"/></div>
 
 ### 3.2 监控中心
 
