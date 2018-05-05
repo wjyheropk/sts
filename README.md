@@ -87,7 +87,7 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 - 同时，因为持久化了事务id，原子操作id和状态，所以业务服务、rollbackApi就可以支持幂等了
 
-![](https://github.com/wjyheropk/ImageStore/blob/master/sts-2.png)
+<div align=center><img width="800" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-2.png"/></div>
 
 
 问题二：怎么样保证持久化的事务信息可信？
