@@ -104,10 +104,18 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 附：事务状态、原子操作状态的流转
 
+<div align=center><img width="700" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-3.png"/></div>
+
 | -        | 状态枚举值   |  保存位置  |
 | ------------- |-------------| -----|
 | **Trans**     | doing/done |   client端     |
 | **Op**        |   try/success/rollback_success   |   Server端   |
+
+
+| -        | 情况1   |  情况2  |  情况3  |  情况4  |  情况5  |  情况6  |
+| ------------- |-------------| -----| -----| -----| -----| -----|
+| **Trans**     | doing |doing |doing |done |done |done |
+| **Op**        |   try  |   success   |rollback_success|  try  |   success   |rollback_success|
 
 
 <br />
