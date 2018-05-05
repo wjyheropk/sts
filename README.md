@@ -117,6 +117,7 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 框架这侧，核心是事务管理器，在不同的阶段，框架会自动对callback进行调用
 
+![](https://github.com/wjyheropk/ImageStore/blob/master/sts-3.png)
 
 
 ### 2.5 详细工作流程图
