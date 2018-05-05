@@ -59,8 +59,7 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 > <i class="icon-pencil"></i>**Note：**以下分布式事务简称trans，原子操作简称op。
 
-![](https://github.com/wjyheropk/ImageStore/blob/master/sts-1.png)
-<img src="https://github.com/wjyheropk/ImageStore/blob/master/sts-1.png" width="400" alt="图片描述文字"/>
+<div align=center><img width="500" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-1.png"/></div>
 
 问题一：谁发起事务恢复？
 
