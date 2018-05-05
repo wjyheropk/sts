@@ -106,17 +106,11 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 <div align=center><img width="700" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-5.png"/></div>
 
-| -        | 状态枚举值   |  保存位置  |
-| ------------- |-------------| -----|
-| **Trans**     | doing/done |   client端     |
-| **Op**        |   try/success/rollback_success   |   Server端   |
-
-
 | -        | 情况1   |  情况2  |  情况3  |  情况4  |  情况5  |  情况6  |
-| ------------- |-------------| -----| -----| -----| -----| -----|
+| ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 | **Trans**     | doing |doing |doing |done |done |done |
 | **Op**        |   try  |   success   |rollback_success|  try  |   success   |rollback_success|
-|               |   业务异常，回滚失败。但无需处理  |   业务异常，回滚失败，需要处理   |业务异常，回滚成功，无需处理|  不存在  |   业务正常|业务异常，回滚成功|
+|               | 业务异常，回滚失败。但无需处理 | 业务异常，回滚失败，需要处理 |业务异常，回滚成功，无需处理| 不存在 | 业务正常|业务异常，回滚成功|
 
 
 <br />
