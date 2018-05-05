@@ -61,6 +61,7 @@ STS比较适用于SOA系统以及微服务架构的系统中，各模块有独�
 
 <div align=center><img width="500" src="https://github.com/wjyheropk/ImageStore/blob/master/sts-1.png"/></div>
 
+
 问题一：谁发起事务恢复？
 
 - 因为整个事物是否成功完成，只有发起方才知道。所以一旦发现失败，发起方就应发起事物恢复
